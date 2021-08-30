@@ -96,7 +96,7 @@ header {
 }
 .slider {
     width: 100%;
-    height: 400px;
+    height: 450px;
     position: absolute;
     top: 70px;
 }
@@ -136,5 +136,41 @@ header {
     height: 10px;
     background: #f2f2f2;
 }
-
-
+.title {
+    position: absolute;
+    top: 520px;
+    width: 100%;
+    /* height: 50px; */
+    justify-content: center;
+    text-align: center;
+    background: #0c212b;
+}
+.title div > a {
+    font-size: 37px;
+    font-weight: 900;
+    color: #a7a7a7;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+.video_container {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 569px;
+    display: inline-flex;
+    background: black;
+}
+.video_main {
+    width: 70%;
+}
+.image_main {
+    width: 30%;
+}
+.image_main img {
+    display: block;
+    object-fit: cover;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 5%;
+}

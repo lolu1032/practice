@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 body {
+    background: #242526;
     width: 100%;
-    height: 1300px;
+    /* height: 1300px; */
 }
 header {
     width: 100%;
@@ -103,6 +104,7 @@ header {
 .swiper {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .swiper-slide {
@@ -136,17 +138,62 @@ header {
     height: 10px;
     background: #f2f2f2;
 }
+.card_container {
+    background: black;
+    position: absolute;
+    top: 540px;
+    left: 20%;
+    width: 60%;
+    height: 380px;
+}
+.card_content {
+    background: #020202;
+}
+.card_content:hover .btn {
+    height: 150px;
+}
+.btn {
+    width: 100%;
+    height: 0px;
+    padding: 10px;
+    transition: all .4s ease;
+}
+
+.btn button {
+    color: #fff;
+    background: none;
+    border: 0;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn button:hover {
+    color: #020202;
+    background: #fff;
+}
+.card_content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .title {
     position: absolute;
-    top: 520px;
+    top: 920px;
     width: 100%;
-    /* height: 50px; */
+    height: 70px;
     justify-content: center;
     text-align: center;
-    background: #0c212b;
+    /* background: #0c212b; */
+    background: #14141493;
 }
 .title div > a {
-    font-size: 37px;
+    font-size: 40px;
     font-weight: 900;
     color: #a7a7a7;
     text-decoration: none;
@@ -156,12 +203,13 @@ header {
     width: 100%;
     height: 60%;
     position: absolute;
-    top: 569px;
+    top: 990px;
     display: inline-flex;
     background: black;
 }
-.video_main {
+#player {
     width: 70%;
+    height: 100%;
 }
 .image_main {
     width: 30%;
